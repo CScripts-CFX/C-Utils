@@ -31,6 +31,6 @@ RegisterNUICallback('sendprompt', function(data)
 end)
 
 --[[ RegisterCommand("testprompt", function()
-    local inputValue = exports.c-utils:CreatePrompt("Enter your text:", "Submit", "Cancel")
+    local inputValue = exports.c_utils:CreatePrompt("Enter your text:", "Submit", "Cancel")
     print(inputValue)
 end, false) ]]

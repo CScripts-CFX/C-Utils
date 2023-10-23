@@ -1,8 +1,8 @@
 function PutOnPrisonerOutfit(source)
-    TriggerClientEvent('c-utils:PutOnPrisonerOutfit', source)
+    TriggerClientEvent('c_utils:PutOnPrisonerOutfit', source)
 end
 
-RegisterServerEvent("c-utils:PutOnPrisonerOutfit")
-AddEventHandler("c-utils:PutOnPrisonerOutfit", PutOnPrisonerOutfit)
+RegisterServerEvent("c_utils:PutOnPrisonerOutfit")
+AddEventHandler("c_utils:PutOnPrisonerOutfit", PutOnPrisonerOutfit)
 
 exports('PutOnPrisonerOutfit', PutOnPrisonerOutfit)

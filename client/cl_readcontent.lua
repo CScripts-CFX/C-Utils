@@ -29,7 +29,7 @@ function openReadContent(title, closeButton, content)
 end
 
 RegisterCommand('fuckcontent', function()
-    exports.c-utils:CreateReadContent("fuck", "fuck", "fuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \n")
+    exports.c_utils:CreateReadContent("fuck", "fuck", "fuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \nfuck \n")
 end, false)
 
 exports('CreateReadContent', function(title, closeButton, content)

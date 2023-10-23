@@ -17,4 +17,4 @@ function Explosion(x, y, z, amountofexplosions)
     return true
 end
 
-exports('AddExplosion', Explosion) -- exports.c-utils:AddExplosion(x, y, z, amountofexplosions)
+exports('AddExplosion', Explosion) -- exports.c_utils:AddExplosion(x, y, z, amountofexplosions)

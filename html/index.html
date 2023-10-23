@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Prompts -->
+    <div class="container" id="prompt-container">
+      <div class="box">
+        <div class="title"></div>
+        <div class="buttons">
+          <button id="yes" type="button"></button>
+          <button id="no" type="button"></button>
+        </div>
+      </div>
+    </div>
+    <!-- Inputs -->
+    <div class="container" id="input-container">
+      <div class="box">
+        <div class="title"></div>
+        <div id="input-warning"></div>
+        <input id="input" type="text" maxlength="99" />
+        <div class="buttons">
+          <button id="submit" type="button"></button>
+          <button id="cancel" type="button"></button>
+        </div>
+      </div>
+    </div>
+    <!-- Large Inputs -->
+    <div class="large-input-container" id="large-input-container">
+      <div class="box">
+        <div class="input-wrapper"></div>
+          <div class="title"></div>
+          <div id="input-warning"></div>
+          <textarea id="large-input" class="large-input"></textarea>
+          <div class="buttons" id="large-inputs-buttons">
+            <button id="large-submit" type="button"></button>
+            <button id="large-cancel" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Read Content -->
+    <div id="read-container">
+      <div class="content">
+        <div class="title" id="read-title"></div>
+        <div class="divider"></div>
+        <div class="letter-content-wrapper">
+          <div class="letter-content" id="letter-content"></div>
+        </div>
+      </div>
+      <div class="close-button">
+        <button id="close-button" type="button"></button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/clipboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+@font-face {
+  font-family: HapnaSlabSerif;
+  src: url(HapnaSlabSerif-Medium.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 100px); /* Adjust as per your preference */
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.container {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-image: url(../images/small.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 4px;
+  width: 350px;
+}
+
+.divider {
+  position: relative;
+  width: 80%;
+  height: 3px;
+  margin: auto;
+  justify-content: center;
+  background-image: url(../images/divider_line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  margin-top: 1rem; /* Update to margin-top */
+  margin-bottom: 1rem; /* Add margin-bottom */
+  z-index: 20;
+}
+
+.title {
+  font-family: HapnaSlabSerif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  background-color: rgba(45, 45, 45, 150);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 5px;
+  flex: 1;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: rgba(55, 55, 55, 150);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inputs */
+#input-container {
+  display: none; /* Hide the input prompt by default */
+}
+
+#input {
+  width: 80%; /* Adjust as per your preference */
+  padding: 10px;
+  margin: 10px auto; /* center the input field */
+  background-color: rgba(
+    45,
+    45,
+    45,
+    150
+  ); /* semi-transparent version of the button color */
+  color: white; /* text color */
+  font-family: HapnaSlabSerif;
+  font-size: 16px; /* Increased font size */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  box-shadow: none; /* Remove shadow if any */
+}
+
+#input:hover {
+  background-color: rgba(55, 55, 55, 150);
+}
+
+#cancel {
+  display: none; /* Hide the cancel button by default */
+}
+
+#input.number-input {
+  width: 100px; /* Adjust as per your preference */
+  text-align: center;
+}
+
+/* Hide up and down arrows in number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#input-warning {
+  padding-bottom: 5px;
+  font-size: 17px; /* Increased font size */
+  color: rgb(165, 7, 7);
+}
+
+/* Larger Inputs */
+.large-input-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-image: url(../images/large.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 728px; /* Adjust as needed */
+  height: 90%;
+  max-height: 948px; /* Adjust as needed */
+  box-sizing: border-box; /* This will include padding and border in the element's total width and height */
+  overflow: auto; /* This will add a scrollbar if the content goes beyond the container's size */
+}
+
+.input-wrapper {
+  width: 60%;
+  height: 60%;
+  margin: 20px auto; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-input {
+  width: 80%;
+  height: 600px; /* Adjust as needed */
+  padding: 10px;
+  margin: 10px auto; /* center the input field */
+  background-color: rgba(
+    45,
+    45,
+    45,
+    50
+  ); /* semi-transparent version of the button color */
+  color: white; /* text color */
+  font-family: HapnaSlabSerif;
+  font-size: 18px;
+  resize: none; /* This will disable the resize functionality */
+  border: none;
+}
+
+.large-input:hover {
+  background-color: rgba(55, 55, 55, 150);
+}
+
+#large-inputs-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* Read Container */
+#read-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-image: url(../images/large.png);
+  background-size: contain; /* Replace with the actual width and height of the image */
+  background-repeat: no-repeat;
+  padding: 2%;
+  width: 25%;
+  height: 60%;
+  box-sizing: border-box; /* This will include padding and border in the element's total width and height */
+  overflow: auto; /* This will add a scrollbar if the content goes beyond the container's size */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#read-title {
+  color: white; /* text color */
+  padding-top: 2%;
+  font-size: 1.5vw;
+  overflow: auto;
+}
+
+.letter-content-wrapper {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  overflow: hidden;
+}
+
+.letter-content {
+  color: white;
+  font-family: HapnaSlabSerif;
+  font-size: 0.7vw;
+  line-height: 1.5;
+  text-align: left;
+  height: 20vw;
+  max-height: 20vw;
+  padding-bottom: 2%;
+  white-space: pre-line;
+  overflow-y: auto;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+.letter-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.letter-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.letter-content::-webkit-scrollbar-thumb {
+  background-color: rgba(55, 55, 55, 1);
+}
+
+.letter-content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(65, 65, 65, 1);
+}
+
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: fixed; /* Change to fixed */
+  bottom: 10%;
+  left: 50%; /* Add this line */
+  transform: translateX(-50%); /* Add this line */
+  z-index: 1;
+}
+
+.close-button button {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  padding: 0.3vw;
+  font-size: 0.8vw;
+  transform: translateX(50%);
+}

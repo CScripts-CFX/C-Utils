@@ -30,6 +30,6 @@ RegisterNUICallback('sendLargeInput', function(data)
 end)
 
 --[[ RegisterCommand("testLargeInput", function()
-    local inputValue = exports.wrp_utils:CreateLargeInput("Enter your text:", "Submit", "Cancel", false, true)
+    local inputValue = exports.c-utils:CreateLargeInput("Enter your text:", "Submit", "Cancel", false, true)
     print(inputValue)
 end, false) ]]

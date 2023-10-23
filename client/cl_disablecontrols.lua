@@ -2,7 +2,7 @@ local disabledControls = false
 local timerfinished = false
 local controls = ""
 
-exports('disableBasicControls', function(bool, time) -- exports.wrp_utils:disableControls(bool, time)
+exports('disableBasicControls', function(bool, time) -- exports.c-utils:disableControls(bool, time)
     controls = "basic"
     if bool or time then
         if not time then
@@ -17,7 +17,7 @@ exports('disableBasicControls', function(bool, time) -- exports.wrp_utils:disabl
     end
 end)
 
-exports('disableMostControls', function(bool, time) -- exports.wrp_utils:disableMostControls(bool, time)
+exports('disableMostControls', function(bool, time) -- exports.c-utils:disableMostControls(bool, time)
     controls = "most"
     if bool or time then
         if not time then
@@ -32,7 +32,7 @@ exports('disableMostControls', function(bool, time) -- exports.wrp_utils:disable
     end
 end)
 
-exports('disableAllControls', function(bool, time) -- exports.wrp_utils:disableAllControls(bool, time)
+exports('disableAllControls', function(bool, time) -- exports.c-utils:disableAllControls(bool, time)
     controls = "all"
     if bool or time then
         if not time then

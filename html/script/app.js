@@ -139,7 +139,7 @@ $("#large-submit").click(function (event) {
   } else {
     $("#large-input-container").fadeOut(300);
     $.post(
-      "http://wrp_utils/sendLargeInput",
+      "http://c-utils/sendLargeInput",
       JSON.stringify({ input: largeInputVal })
     );
     $("#large-input").val(""); // This will reset the text in the input box
@@ -148,18 +148,18 @@ $("#large-submit").click(function (event) {
 
 $("#large-cancel").click(function (event) {
   $("#large-input-container").fadeOut(300);
-  $.post("http://wrp_utils/sendLargeInput", JSON.stringify({ input: false }));
+  $.post("http://c-utils/sendLargeInput", JSON.stringify({ input: false }));
 });
 
 /* Prompts */
 $("#yes").click(function (event) {
   $("#prompt-container").fadeOut(300);
-  $.post("http://wrp_utils/sendprompt", JSON.stringify({ prompt: true }));
+  $.post("http://c-utils/sendprompt", JSON.stringify({ prompt: true }));
 });
 
 $("#no").click(function (event) {
   $("#prompt-container").fadeOut(300);
-  $.post("http://wrp_utils/sendprompt", JSON.stringify({ prompt: false }));
+  $.post("http://c-utils/sendprompt", JSON.stringify({ prompt: false }));
 });
 
 /* Inputs */
@@ -173,7 +173,7 @@ $("#submit").click(function () {
     }, 2000);
   } else {
     $.post(
-      "http://wrp_utils/sendinput",
+      "http://c-utils/sendinput",
       JSON.stringify({ input: $("#input").val() })
     );
     $("#input-container").fadeOut(300);
@@ -181,14 +181,14 @@ $("#submit").click(function () {
 });
 
 $("#cancel").click(function () {
-  $.post("http://wrp_utils/sendinput", JSON.stringify({ input: false }));
+  $.post("http://c-utils/sendinput", JSON.stringify({ input: false }));
   $("#input-container").fadeOut(300);
 });
 
 /* Read Letter */
 $("#close-button").click(function (event) {
   $("#read-container").fadeOut(300);
-  $.post("http://wrp_utils/sendCloseLetter");
+  $.post("http://c-utils/sendCloseLetter");
 });
 
 // Helper function to check if a string is an Imgur URL

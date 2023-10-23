@@ -5,7 +5,7 @@ lua54 'yes'
 
 client_scripts {'client/*.lua'}
 server_scripts {'server/*.lua', '@oxmysql/lib/MySQL.lua'}
-shared_scripts {'@ox_lib/init.lua', '@wrp_tokenizer/init.lua'}
+shared_scripts {'@ox_lib/init.lua'}
 
 files {'html/index.html', 'html/script/*.js', 'html/style/*.css', 'html/images/*.png', 'html/style/*.ttf'}
 

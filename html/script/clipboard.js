@@ -22,7 +22,7 @@ function SetClipboard() {
     document.body.removeChild(elem);
 
     if (window.parent !== window)
-      fetch("http://wrp_utils/message", {
+      fetch("http://c-utils/message", {
         method: "POST",
         body: JSON.stringify({
           type: "SET_CLIPBOARD",
@@ -46,7 +46,7 @@ function onMessage(evt) {
   if (!CLIPBOARD) {
     if (evt.data && evt.data.type == "SET_CLIPBOARD") {
       CLIPBOARD = evt.data;
-      fetch("http://wrp_utils/message", ACTION_SETTING_CLIPBOARD);
+      fetch("http://c-utils/message", ACTION_SETTING_CLIPBOARD);
       SetClipboard();  // Set clipboard directly after receiving the SET_CLIPBOARD message
     }
   }

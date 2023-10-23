@@ -1,5 +1,5 @@
-RegisterServerEvent("wrp_utils:NotifyInArea")
-AddEventHandler("wrp_utils:NotifyInArea", function(coords, range, text)
+RegisterServerEvent("c-utils:NotifyInArea")
+AddEventHandler("c-utils:NotifyInArea", function(coords, range, text)
     local _source = source
 
     for _, playerId in ipairs(GetPlayers()) do

@@ -33,8 +33,8 @@ function PutOnPrisonerOutfit()
     end
 end
 
-RegisterNetEvent('wrp_utils:PutOnPrisonerOutfit')
-AddEventHandler('wrp_utils:PutOnPrisonerOutfit', PutOnPrisonerOutfit)
+RegisterNetEvent('c-utils:PutOnPrisonerOutfit')
+AddEventHandler('c-utils:PutOnPrisonerOutfit', PutOnPrisonerOutfit)
 
 
 exports('PutOnPrisonerOutfit', PutOnPrisonerOutfit)
